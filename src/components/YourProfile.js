@@ -33,7 +33,7 @@ const YourProfile = () => {
 
   useEffect(() => {
     const id = localStorage.getItem('id')
-    axios.get("https://restful-blog-api-gxyi.onrender.com/detail/"+id, {
+    axios.get("https://placement-talks-backend.onrender.com/detail/"+id, {
       headers: {
           Authorization:'Bearer '+localStorage.getItem('token')
       }
@@ -53,7 +53,7 @@ const YourProfile = () => {
     const id = localStorage.getItem('id')
     console.log("clicked")
     const data = {fullName:formData.fullName , author:formData.author,college:formData.college}
-    axios.post("https://restful-blog-api-gxyi.onrender.com/detail/" + id, data, {
+    axios.post("https://placement-talks-backend.onrender.com/detail/" + id, data, {
       headers: {
         Authorization: 'Bearer ' + localStorage.getItem('token')
       }

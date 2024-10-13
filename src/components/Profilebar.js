@@ -7,7 +7,7 @@ const Profilebar = () => {
     const [data,setData] = useState({img:"",fullName:"",author:"" ,college:"N/A"})
     useEffect(()=>{
         const uid = localStorage.getItem('id');
-        axios.get(`https://restful-blog-api-gxyi.onrender.com/detail/${uid}`,{
+        axios.get(`https://placement-talks-backend.onrender.com/detail/${uid}`,{
             headers: {
                 Authorization:'Bearer '+localStorage.getItem('token')
             }

@@ -16,7 +16,7 @@ const Signup = () => {
 	const submitHandler = (e) => {
 		e.preventDefault();
 		axios
-      .post("https://restful-blog-api-gxyi.onrender.com/signup", {
+      .post("https://placement-talks-backend.onrender.com/signup", {
         email: email,
         fullName: fullName,
         author: author,

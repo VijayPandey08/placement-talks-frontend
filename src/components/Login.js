@@ -16,7 +16,7 @@ const Login = () => {
 	const SubmitHandler = (e) => {
 		e.preventDefault();
 		console.log(email,password);
-		axios.post("https://restful-blog-api-gxyi.onrender.com/login/", {
+		axios.post("https://placement-talks-backend.onrender.com/login/", {
 			email: email,
 			password: password
 		}).then((result) => {

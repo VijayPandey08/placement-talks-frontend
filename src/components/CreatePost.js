@@ -13,7 +13,7 @@ const CreatePost = () => {
   const PostHandler = (e) => {
     e.preventDefault();
     
-    axios.post('https://restful-blog-api-gxyi.onrender.com/blog/post_blog', {
+    axios.post('https://placement-talks-backend.onrender.com/blog/post_blog', {
       author:author,
       authorId:id,
       title: e.target[0].value,
